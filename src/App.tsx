@@ -4,7 +4,7 @@ import { Websocket } from './components';
 import { LandingPage } from './views';
 import { Route, Routes } from 'react-router-dom'
 
-function App() {
+function App(): JSX.Element {
   return (
     <Routes>
       <Route path='/' element={<LandingPage />} />

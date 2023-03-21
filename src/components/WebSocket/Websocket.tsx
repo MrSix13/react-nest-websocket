@@ -1,7 +1,8 @@
 import styles from './WebSocket.module.css';
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, FC } from "react";
 import { WebsocketContext } from "../../contexts/WebsocketContext";
 import { useNavigate } from 'react-router-dom';
+
 
 export type MessagePayload = {
     contentss: string,
@@ -10,7 +11,7 @@ export type MessagePayload = {
     date: string
 }
 
-export const Websocket = () => {
+export const Websocket: FC = (): JSX.Element => {
     const [textInput, setTextInput] = useState<string>('');
     const [user, setUser] = useState<string>('');
     const [messages, setMessages] = useState<MessagePayload[]>([])
@@ -29,7 +30,6 @@ export const Websocket = () => {
         socket.on('onMessage', (newMessage: MessagePayload) => {
             setMessages((prev) => [...prev, newMessage]);
         });
-
         return () => {
             socket.off('connect');
             socket.off('onMessage');
