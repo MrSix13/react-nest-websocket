@@ -79,9 +79,17 @@ p{
     background-color:rgba(0, 128, 0, 0.808); ;
 }
 
+.date_chat{
+    height: 70px;
+}
+
 @media only screen and (min-width: 350px) {
     .input_chat input{
-        width: 45vw;
+        width: 30vw;
+    }
+    .user_chat{
+        display: flex;
+        justify-content: space-between;
     }
 
     .mensaje_chat{

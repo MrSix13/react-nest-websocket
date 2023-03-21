@@ -52,7 +52,9 @@ export const Websocket = () => {
                             <img src="https://w7.pngwing.com/pngs/627/693/png-transparent-computer-icons-user-user-icon.png" alt="" />
                         </div>
                         <p>{msg.contentss[1]}</p>
-                        <h4>Hora: {msg.date.slice(11).split("")}</h4>
+                        <div className={styles.date_chat}>
+                            <h4>Hora: {msg.date.slice(11).split("")}</h4>
+                        </div>
                     </div>
                 ))}
             </div>}</div>
