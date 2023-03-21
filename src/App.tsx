@@ -1,14 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { WebsocketProvider, socket } from './contexts/WebsocketContext';
 import { Websocket } from './components';
+import { LandingPage } from './views';
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <WebsocketProvider value={socket}>
-      <Websocket />
-    </WebsocketProvider>
+    <Routes>
+      <Route path='/' element={<LandingPage />} />
+      <Route path='/chat' element={<Websocket />} />
+    </Routes>
   );
 }
 

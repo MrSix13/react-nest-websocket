@@ -1,0 +1,137 @@
+.container_chat{
+    border: 10px solid rgb(35, 13, 13);
+    display: grid;
+    height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.container_chat h1{
+    text-align: center;
+}
+
+.user_chat{
+    display: flex;
+}
+
+p{
+    text-align: center;
+}
+
+.mensaje_chat{
+    border-radius: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.314);
+    background-color: rgba(0, 255, 255, 0.305);
+    width: 80vw;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.mensaje_chat p{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.mensaje_chat h2{
+    font-size: 20px;
+}
+.mensaje_chat img{
+    width: 8vw;
+    height: 8vh;
+    border-radius: 50%;
+}
+
+.input_chat{
+    border: 1px solid rgba(0, 0, 0, 0.541);
+    height: 7vh;
+    padding: 10px;
+    margin-top: 30em;
+    position: fixed;
+    bottom: 10px;
+    margin-left: 40px;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.input_chat input{
+    background-color: rgba(129, 215, 246, 0.568);
+    width: 70vw;
+    height: 3vh;
+    border-radius: 20px;
+    margin: 10px 10px;
+    border: none;
+
+}
+
+.input_chat:focus, input:focus{
+   outline: none;
+}
+
+.input_chat button{
+    background-color: rgba(0, 128, 0, 0.583);
+    border-radius: 40%;
+    padding: 10px;
+}
+.input_chat button:hover{
+    background-color:rgba(0, 128, 0, 0.808); ;
+}
+
+@media only screen and (min-width: 350px) {
+    .input_chat input{
+        width: 45vw;
+    }
+
+    .mensaje_chat{
+        width: 60vw;
+        height: 30vh;
+        padding: 0;
+    }
+
+    .mensaje_chat p{
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    
+    .mensaje_chat h2{
+        font-size: 15px;
+    }
+    .mensaje_chat img{
+        width: 8vw;
+        height: 8vh;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .input_chat input{
+        width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .input_chat input{
+        width: 70vw;
+    }
+    .mensaje_chat img{
+        width: 10vw;
+        height: 10vh;
+        
+    }
+    .mensaje_chat{
+        width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .mensaje_chat img{
+        width: 9vw;
+        height: 9vh;
+        object-fit: contain;
+    }
+
+    .input_chat{
+        margin-left: 90px;
+    }
+}
