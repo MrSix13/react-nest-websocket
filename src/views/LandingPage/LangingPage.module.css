@@ -1,0 +1,36 @@
+.landing_container{
+    border: 1px solid black;
+    width: 80vw;
+    margin: 15% auto;
+    height: 30vh;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    font-family: sans-serif;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.72);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.72);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.72); 
+}
+
+
+.landing_container input{
+    background-color: rgba(0, 221, 255, 0.446);
+    width: 30vw;
+    height: 3vh;
+    border-radius: 20px;
+    border: none;
+    margin-top: 4em;
+    margin-right: 3em;
+}
+
+
+.landing_container button{
+    background-color: rgba(0, 128, 0, 0.583);
+    border-radius: 40%;
+    padding: 10px;
+}
+
+h1,h2{
+    text-align: center;
+    font-family: sans-serif;
+}
